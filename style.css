@@ -20,21 +20,31 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 nav ul li a {
     color: #F8F9FA;
     text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    min-height: 44px;
+    min-width: 44px;
+    text-align: center;
 }
 
 /* Main Content Styles */
 main {
-    padding: 2rem;
+    padding: 1rem;
+}
+
+.hero {
+    position: relative;
 }
 
 .hero img {
@@ -49,77 +59,40 @@ main {
     transform: translate(-50%, -50%);
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 1.5rem;
 }
 
 .button {
     display: inline-block;
     background-color: #28A745;
     color: #F8F9FA;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     border-radius: 5px;
+    min-width: 44px;
+    min-height: 44px;
+    text-align: center;
 }
 
 .featured-news article {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: box-shadow 0.3s ease;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .featured-news article:hover {
     box-shadow: 0 6px 8px rgba(0,0,0,0.15);
 }
 
-.benefits li {
-    list-style-type: none;
-    padding-left: 30px;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: left center;
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.benefits li:nth-child(1) {
-    background-image: url('heart-icon.png');
-}
-
-.benefits li:nth-child(2) {
-    background-image: url('coordination-icon.png');
-}
-
-.benefits li:nth-child(3) {
-    background-image: url('team-icon.png');
-}
-
-.team-profile {
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.team-profile:hover {
-    transform: translateY(-5px);
-}
-
-.events table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.contact-info p {
-    padding-left: 30px;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-
-.contact-info p:nth-child(1) {
-    background-image: url('email-icon.png');
-}
-
-.contact-info p:nth-child(2) {
-    background-image: url('phone-icon.png');
-}
-
-.contact-info p:nth-child(3) {
-    background-image: url('location-icon.png');
+.cta .button {
+    margin-bottom: 1rem;
 }
 
 /* Footer Styles */
@@ -128,31 +101,25 @@ footer {
     color: #F8F9FA;
     text-align: center;
     padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Responsive Design */
 @media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
     nav ul li {
-        display: inline;
-    }
-
-    .hero {
-        display: flex;
-        align-items: center;
-    }
-
-    .hero img {
-        width: 66.66%;
+        margin-right: 1rem;
+        margin-bottom: 0;
     }
 
     .hero h1 {
-        position: static;
-        transform: none;
-        width: 33.33%;
-        padding: 0 20px;
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 2rem;
     }
 
     .featured-news, .cta {
@@ -163,19 +130,26 @@ footer {
     .featured-news article, .cta a {
         width: 48%;
     }
+}
 
-    .about-content, .contact-content {
-        display: flex;
-        justify-content: space-between;
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
     }
 
-    .about-content > section, .contact-content > section {
-        width: 48%;
+    .cta {
+        flex-direction: row;
+        justify-content: center;
     }
 
-    .team-profiles {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+    .cta .button {
+        margin: 0 1rem;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 768px) {
+    .hero img {
+        height: 50vh;
+        object-fit: cover;
     }
 }

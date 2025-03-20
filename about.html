@@ -18,7 +18,6 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         <!-- Page Title -->
         <h1>About Floorball</h1>
@@ -26,7 +25,11 @@
         <!-- History Section -->
         <section class="history">
             <h2>History of Floorball</h2>
-            <img src="images/floorball-history.jpg" alt="Historical image of early Floorball players">
+            <picture>
+                <source srcset="images/floorball-history-small.jpg" media="(max-width: 768px)">
+                <source srcset="images/floorball-history-large.jpg" media="(min-width: 769px)">
+                <img src="images/floorball-history.jpg" alt="Historical image of early Floorball players">
+            </picture>
             <p>Floorball originated in Sweden in the late 1960s and has since grown into a globally recognized sport...</p>
         </section>
 
@@ -41,7 +44,11 @@
             </table>
 
             <!-- Image for Rules -->
-            <img src="images/floorball-rules.jpg" alt="Players demonstrating Floorball rules during a game">
+            <picture>
+                <source srcset="images/floorball-rules-small.jpg" media="(max-width: 768px)">
+                <source srcset="images/floorball-rules-large.jpg" media="(min-width: 769px)">
+                <img src="images/floorball-rules.jpg" alt="Players demonstrating Floorball rules during a game">
+            </picture>
         </section>
 
         <!-- Benefits Section -->
@@ -52,4 +59,13 @@
                 <!-- Replace icons with actual images later -->
                 <li style='background-image: url("icons/heart-icon.png");'>Improves cardiovascular health.</li>
                 <li style='background-image: url("icons/coordination-icon.png");'>Enhances hand-eye coordination.</li> 
-             ...
+                <li style='background-image: url("icons/team-icon.png");'>Promotes teamwork.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Floorball Community. All rights reserved.</p>
+    </footer>
+</body>
+</html>

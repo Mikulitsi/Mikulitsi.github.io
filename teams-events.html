@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams & Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Floorball</a></li>
+                <li><a href="teams-events.html">Teams & Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Title -->
+        <h1>Teams & Events</h1>
+
+        <!-- Teams Section -->
+        <section class="teams">
+            <h2>Local Teams</h2>
+            <div class="team-profiles">
+                <article class="team-profile">
+                    <h3>Floorball Fighters</h3>
+                    <picture>
+                        <source srcset="images/team1-small.jpg" media="(max-width: 768px)">
+                        <source srcset="images/team1-large.jpg" media="(min-width: 769px)">
+                        <img src="images/team1.jpg" alt="Floorball Fighters team photo">
+                    </picture>
+                    <p>The Floorball Fighters have been dominating the local league since 2010.</p>
+                </article>
+                <!-- Add more team profiles -->
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <table border="1">
+                <tr><th>Date</th><th>Event</th><th>Location</th></tr>
+                <tr><td>June 15, 2025</td><td>City Championship</td><td>Central Arena</td></tr>
+                <!-- Add more events -->
+            </table>
+        </section>
+
+        <!-- Registration Section -->
+        <section class="registration">
+            <h2>Join a Team</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="team">Preferred Team:</label>
+                <select id="team" name="team">
+                    <option value="fighters">Floorball Fighters</option>
+                    <!-- Add more team options -->
+                </select>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Floorball Community. All rights reserved.</p>
+    </footer>
+</body>
+</html>

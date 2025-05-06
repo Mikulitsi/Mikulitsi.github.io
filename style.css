@@ -149,6 +149,8 @@ footer {
 }
 
 /* Responsive Design Media Queries */
+
+/* Mobile View (max-width: 600px) */
 @media (max-width: 600px) {
     nav ul li {
         display: block; /* Stack navigation vertically on mobile */
@@ -182,5 +184,48 @@ footer {
     p {
         font-size: 0.9rem; /* Reduce text size on mobile */
         text-indent: 10px; /* Reduce indentation on mobile */
+    }
+}
+
+/* Desktop View (min-width: 1440px) */
+@media (min-width: 1440px) {
+    main, header, footer {
+        max-width: 1200px; /* Constrain content width on desktop */
+        margin: 0 auto; /* Center content */
+    }
+
+    section {
+        margin: 0; /* Remove percentage margin within constrained container */
+        padding: 1.5rem 0; /* Increase padding for better spacing */
+    }
+
+    table {
+        width: 80%; /* Slightly smaller tables on desktop */
+    }
+
+    nav ul li {
+        margin-right: 2rem; /* Increase spacing between nav items */
+        font-size: 1.2rem; /* Larger font for navigation */
+    }
+
+    img {
+        max-width: 800px; /* Cap image width to prevent stretching */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Larger heading for desktop */
+    }
+
+    h2 {
+        font-size: 2rem; /* Larger subheading */
+    }
+
+    h3 {
+        font-size: 1.5rem; /* Larger sub-subheading */
+    }
+
+    p {
+        font-size: 1.1rem; /* Slightly larger paragraph text */
+        text-indent: 30px; /* Adjust indentation */
     }
 }

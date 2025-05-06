@@ -229,3 +229,12 @@ footer {
         text-indent: 30px; /* Adjust indentation */
     }
 }
+
+/* Caption Styling */
+figcaption {
+    font-style: italic; /* Italicize the caption */
+    color: #555555; /* Lighter text color */
+    font-size: 0.9rem; /* Slightly smaller than paragraph text */
+    text-align: center; /* Center the caption */
+    margin-top: 0.5rem; /* Add space above the caption */
+}

@@ -10,20 +10,24 @@ body {
 /* Headings */
 h1 {
     font-family: 'Verdana', sans-serif; /* Web-safe font */
-    color: #0066cc; /* Blue color */
+    color: #0033cc; /* Blue color */
     font-size: 2rem;
+    text-align: center; /* Center-align headings */
 }
 
 h2 {
     font-family: 'Verdana', sans-serif;
     color: #006633; /* Green color */
     font-size: 1.5rem;
+    text-decoration: underline; /* Decorative underline */
+    text-align: center;
 }
 
 h3 {
     font-family: 'Verdana', sans-serif;
     color: #003366; /* Dark blue color */
     font-size: 1.2rem;
+    text-align: center;
 }
 
 /* Paragraphs */
@@ -33,6 +37,8 @@ p {
     font-size: 1rem;
     margin: 0 0 1rem 0;
     padding: 0.5rem 0;
+    text-align: justify; /* Justify text for readability */
+    text-indent: 20px; /* Indentation for paragraphs */
 }
 
 /* Links */
@@ -47,17 +53,29 @@ a:visited {
 
 a:hover {
     color: #003366; /* Darker blue on hover */
+    text-decoration: none; /* Remove underline on hover */
 }
 
 /* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center; /* Center navigation */
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
     margin-right: 1rem;
+}
+
+/* Blockquote for Quotations */
+blockquote {
+    font-style: italic;
+    color: #555555;
+    margin: 1rem 2rem;
+    padding-left: 1rem;
+    border-left: 4px solid #0066cc; /* Blue border for emphasis */
 }
 
 /* Classes used in index.html */
@@ -68,9 +86,101 @@ nav ul li {
 
 .intro, .cta {
     margin-bottom: 2rem;
+    padding: 0 1rem;
 }
 
+/* Section for Semantic Elements */
+section {
+    margin: 0 2%; /* Relative margin for responsiveness */
+    padding: 1rem 0;
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    display: block; /* Center images */
+    margin: 0 auto 1rem; /* Center and add spacing below */
+}
+
+/* Tables */
+table {
+    border-collapse: collapse; /* Clean table borders */
+    margin: 1rem auto; /* Center the table */
+    width: 90%; /* Relative width for responsiveness */
+    border: 1px solid #333333; /* Replaced border="1" */
+}
+
+th, td {
+    border: 1px solid #333333; /* Simple border for table cells */
+    padding: 0.5rem; /* Spacing inside cells */
+    text-align: left;
+}
+
+th {
+    background-color: #e6f0ff; /* Light blue background for headers */
+}
+
+/* Lists */
+ul, ol {
+    line-height: 1.8; /* Increase spacing between list items */
+    margin-left: 2rem; /* Indent lists */
+}
+
+/* Button */
 .button {
     display: inline-block;
     padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #0066cc;
+    text-align: center;
+}
+
+/* Header and Footer */
+header {
+    background-color: #e6f0ff;
+    padding: 1rem 0;
+}
+
+footer {
+    background-color: #d9d9d9;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive Design Media Queries */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack navigation vertically on mobile */
+        margin: 0.5rem 0;
+    }
+
+    section {
+        margin: 0 1%; /* Reduce margins on mobile */
+        padding: 0.5rem 0;
+    }
+
+    table {
+        width: 100%; /* Full width on mobile */
+        display: block;
+        overflow-x: auto; /* Make tables scrollable on small screens */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduce heading size on mobile */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Reduce heading size on mobile */
+    }
+
+    h3 {
+        font-size: 1rem; /* Reduce heading size on mobile */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reduce text size on mobile */
+        text-indent: 10px; /* Reduce indentation on mobile */
+    }
 }

@@ -1,150 +1,204 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif; /* Web-safe font */
-    color: #333333;
-    background-color: #F0F0F0; /* Simple background color */
+    font-family: 'Arial', sans-serif;
+    color: black;
+    background-color: gainsboro;
     margin: 0;
     padding: 0;
 }
 
 /* Headings */
 h1 {
-    font-family: 'Verdana', sans-serif; /* Web-safe font */
-    color: #0033cc; /* Blue color */
-    font-size: 2rem;
-    text-align: center; /* Center-align headings */
+    font-family: 'Verdana', sans-serif;
+    color: darkblue;
+    font-size: 32px;
+    text-align: center;
 }
 
 h2 {
     font-family: 'Verdana', sans-serif;
-    color: #006633; /* Green color */
-    font-size: 1.5rem;
-    text-decoration: underline; /* Decorative underline */
+    color: darkgreen;
+    font-size: 24px;
+    text-decoration: underline;
     text-align: center;
 }
 
 h3 {
     font-family: 'Verdana', sans-serif;
-    color: #003366; /* Dark blue color */
-    font-size: 1.2rem;
+    color: darkslateblue;
+    font-size: 19px;
     text-align: center;
 }
 
 /* Paragraphs */
 p {
     font-family: 'Arial', sans-serif;
-    color: #333333;
-    font-size: 1rem;
-    margin: 0 0 1rem 0;
-    padding: 0.5rem 0;
-    text-align: justify; /* Justify text for readability */
-    text-indent: 20px; /* Indentation for paragraphs */
+    color: black;
+    font-size: 16px;
+    margin: 0 0 16px 0;
+    padding: 8px 0;
+    text-align: justify;
+    text-indent: 20px;
 }
 
-/* Links */
+/* Links (General) */
 a {
-    color: #0066cc; /* Blue for links */
+    color: dodgerblue;
     text-decoration: underline;
 }
 
 a:visited {
-    color: #660099; /* Purple for visited links */
+    color: indigo;
 }
 
 a:hover {
-    color: #003366; /* Darker blue on hover */
-    text-decoration: none; /* Remove underline on hover */
+    color: darkblue;
+    text-decoration: none;
+}
+
+/* Navigation Links (Specific) */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Active State for Current Page */
+a[aria-current="page"] {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
 /* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center; /* Center navigation */
+    text-align: center;
     margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 1rem;
+    margin-right: 16px;
 }
 
 /* Blockquote for Quotations */
 blockquote {
     font-style: italic;
-    color: #555555;
-    margin: 1rem 2rem;
-    padding-left: 1rem;
-    border-left: 4px solid #0066cc; /* Blue border for emphasis */
+    color: dimgray;
+    margin: 16px 32px;
+    padding-left: 16px;
+    border-left: 4px solid dodgerblue;
 }
 
 /* Classes used in index.html */
+.hero {
+    padding: 32px 0;
+}
+
 .hero img {
     width: 100%;
     height: auto;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto 16px;
 }
 
 .intro, .cta {
-    margin-bottom: 2rem;
-    padding: 0 1rem;
+    margin-bottom: 32px;
+    padding: 16px;
 }
 
 /* Section for Semantic Elements */
 section {
-    margin: 0 2%; /* Relative margin for responsiveness */
-    padding: 1rem 0;
+    margin: 0 2%;
+    padding: 16px 0;
 }
 
 /* Images */
 img {
-    max-width: 100%; /* Ensure images are responsive */
+    max-width: 100%;
     height: auto;
-    display: block; /* Center images */
-    margin: 0 auto 1rem; /* Center and add spacing below */
+    display: block;
+    margin: 0 auto 16px;
+}
+
+/* Caption Styling */
+figcaption {
+    font-style: italic;
+    color: dimgray;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
 }
 
 /* Tables */
 table {
-    border-collapse: collapse; /* Clean table borders */
-    margin: 1rem auto; /* Center the table */
-    width: 90%; /* Relative width for responsiveness */
-    border: 1px solid #333333; /* Replaced border="1" */
+    border-collapse: collapse;
+    margin: 16px auto;
+    width: 90%;
+    border: 1px solid black;
 }
 
 th, td {
-    border: 1px solid #333333; /* Simple border for table cells */
-    padding: 0.5rem; /* Spacing inside cells */
+    border: 1px solid black;
+    padding: 8px;
     text-align: left;
 }
 
 th {
-    background-color: #e6f0ff; /* Light blue background for headers */
+    background-color: lightsteelblue;
 }
 
 /* Lists */
 ul, ol {
-    line-height: 1.8; /* Increase spacing between list items */
-    margin-left: 2rem; /* Indent lists */
+    line-height: 1.8;
+    margin-left: 32px;
 }
 
 /* Button */
 .button {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     text-decoration: none;
-    color: #0066cc;
+    color: dodgerblue;
     text-align: center;
 }
 
 /* Header and Footer */
 header {
-    background-color: #e6f0ff;
-    padding: 1rem 0;
+    background-color: darkblue;
+    padding: 16px 0;
+    width: 100%;
 }
 
 footer {
-    background-color: #d9d9d9;
-    padding: 1rem 0;
+    background-color: darkblue;
+    padding: 16px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+}
+
+footer p, footer a {
+    color: white;
+    margin: 0;
+}
+
+/* Footer Navigation (Specific to about.html and contact.html) */
+footer nav {
     text-align: center;
 }
 
@@ -153,88 +207,79 @@ footer {
 /* Mobile View (max-width: 600px) */
 @media (max-width: 600px) {
     nav ul li {
-        display: block; /* Stack navigation vertically on mobile */
-        margin: 0.5rem 0;
+        display: block;
+        margin: 8px 0;
     }
 
     section {
-        margin: 0 1%; /* Reduce margins on mobile */
-        padding: 0.5rem 0;
+        margin: 0 1%;
+        padding: 8px 0;
     }
 
     table {
-        width: 100%; /* Full width on mobile */
+        width: 100%;
         display: block;
-        overflow-x: auto; /* Make tables scrollable on small screens */
-        white-space: nowrap; /* Prevent text wrapping */
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
     h1 {
-        font-size: 1.5rem; /* Reduce heading size on mobile */
+        font-size: 24px;
     }
 
     h2 {
-        font-size: 1.2rem; /* Reduce heading size on mobile */
+        font-size: 19px;
     }
 
     h3 {
-        font-size: 1rem; /* Reduce heading size on mobile */
+        font-size: 16px;
     }
 
     p {
-        font-size: 0.9rem; /* Reduce text size on mobile */
-        text-indent: 10px; /* Reduce indentation on mobile */
+        font-size: 14px;
+        text-indent: 10px;
     }
 }
 
 /* Desktop View (min-width: 1440px) */
 @media (min-width: 1440px) {
-    main, header, footer {
-        max-width: 1200px; /* Constrain content width on desktop */
-        margin: 0 auto; /* Center content */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     section {
-        margin: 0; /* Remove percentage margin within constrained container */
-        padding: 1.5rem 0; /* Increase padding for better spacing */
+        margin: 0;
+        padding: 24px 0;
     }
 
     table {
-        width: 80%; /* Slightly smaller tables on desktop */
+        width: 80%;
     }
 
     nav ul li {
-        margin-right: 2rem; /* Increase spacing between nav items */
-        font-size: 1.2rem; /* Larger font for navigation */
+        margin-right: 32px;
+        font-size: 19px;
     }
 
     img {
-        max-width: 800px; /* Cap image width to prevent stretching */
+        max-width: 800px;
     }
 
     h1 {
-        font-size: 2.5rem; /* Larger heading for desktop */
+        font-size: 40px;
     }
 
     h2 {
-        font-size: 2rem; /* Larger subheading */
+        font-size: 32px;
     }
 
     h3 {
-        font-size: 1.5rem; /* Larger sub-subheading */
+        font-size: 24px;
     }
 
     p {
-        font-size: 1.1rem; /* Slightly larger paragraph text */
-        text-indent: 30px; /* Adjust indentation */
+        font-size: 17px;
+        text-indent: 30px;
     }
-}
-
-/* Caption Styling */
-figcaption {
-    font-style: italic; /* Italicize the caption */
-    color: #555555; /* Lighter text color */
-    font-size: 0.9rem; /* Slightly smaller than paragraph text */
-    text-align: center; /* Center the caption */
-    margin-top: 0.5rem; /* Add space above the caption */
 }

@@ -1,255 +1,145 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     color: black;
     background-color: white;
     margin: 0;
     padding: 0;
 }
 
-/* Headings */
+/*headings*/
 h1 {
-    font-family: 'Verdana', sans-serif;
+    font-family: Verdana, sans-serif;
     color: darkblue;
     font-size: 32px;
     text-align: center;
 }
 
 h2 {
-    font-family: 'Verdana', sans-serif;
+    font-family: Verdana, sans-serif;
     color: red;
     font-size: 24px;
-    text-decoration: underline;
     text-align: center;
 }
 
 h3 {
-    font-family: 'Verdana', sans-serif;
+    font-family: Verdana, sans-serif;
     color: darkslateblue;
     font-size: 19px;
     text-align: center;
 }
 
-/* Paragraphs */
+/*paragraphs*/
 p {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     color: black;
     font-size: 16px;
-    margin: 0 0 16px 0;
-    padding: 8px 0;
-    text-align: justify;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
 }
 
-/* Links (General) */
+/*links*/
 a {
-    color: dodgerblue;
+    color: blue;
     text-decoration: underline;
 }
 
-/* Navigation Links (Specific) */
+/*navigation links*/
 nav a {
+    color: white !important; /* Ensure nav links are white */
     text-decoration: none;
-    color: white;
-    font-weight: bold;
 }
 
-nav a:hover {
+/* Active navigation item */
+nav ul li.active a {
+    font-weight: bold;
     text-decoration: underline;
 }
 
-/* Active State for Current Page */
-a[aria-current="page"] {
+/* Highlight active link in footer */
+footer a.active {
     font-weight: bold;
-    color: yellow;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-/* Navigation */
+/*navigation*/
 nav ul {
     list-style-type: none;
-    padding: 0;
     text-align: center;
     margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 16px;
+    margin: 10px;
 }
 
-/* Classes used in index.html */
-.hero {
-    padding: 32px 0;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    display: block;
-    margin: 0 auto 16px;
-}
-
-.intro, .cta {
-    margin-bottom: 32px;
-    padding: 16px;
-}
-
-/* Semantic HTML Section */
-section {
-    margin: 0 2%;
-    padding: 16px 0;
-}
-
-/* Images */
+/*images*/
 img {
+    display: block;
+    margin: 10px auto;
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto 16px;
 }
 
-/* Image Caption Styling */
-figcaption {
-    font-style: italic;
-    color: dimgray;
-    font-size: 14px;
-    text-align: center;
-    margin-top: 8px;
+/*tables*/
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
 }
 
-/* Tables */
 table {
-    border-collapse: collapse;
-    margin: 16px auto;
-    width: 90%;
+    margin: 10px auto;
     border: 1px solid black;
+    width: 90%;
+    max-width: 600px;
+    border-collapse: collapse;
 }
 
 th, td {
     border: 1px solid black;
     padding: 8px;
-    text-align: left;
 }
 
 th {
-    background-color: lightsteelblue;
+    background-color: lightblue;
 }
 
-/* Lists */
+/*lists*/
 ul, ol {
-    line-height: 1.8;
-    margin-left: 32px;
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 20px;
+    margin: 10px;
 }
 
 /* Header and Footer */
 header {
     background-color: darkblue;
-    padding: 16px 0;
-    width: 100%;
-    min-height: 50px;
+    padding: 10px;
 }
 
 footer {
     background-color: darkblue;
-    padding: 16px 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60px;
+    padding: 10px;
 }
 
 footer p, footer a {
     color: white;
-    margin: 0;
+    text-align: center;
 }
 
-/* Footer Navigation */
-footer nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+footer a:hover {
+    text-decoration: underline;
+    color: lightblue;
 }
 
-/* Mobile */
+/* Responsive text for small screens */
 @media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 8px 0;
-    }
-
-    section {
-        margin: 0 1%;
-        padding: 8px 0;
-    }
-
-    table {
-        width: 100%;
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 19px;
-    }
-
-    h3 {
-        font-size: 16px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-}
-
-/* Desktop */
-@media (min-width: 1440px) {
-    main {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    section {
-        margin: 0;
-        padding: 24px 0;
-    }
-
-    table {
-        width: 80%;
-    }
-
-    nav ul li {
-        margin-right: 32px;
-        font-size: 19px;
-    }
-
-    img {
-        max-width: 800px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 32px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 17px;
-    }
+    h1 { font-size: 24px; }
+    h2 { font-size: 18px; }
+    h3 { font-size: 16px; }
+    p, th, td { font-size: 14px; }
+    table { width: 100%; }
 }

@@ -2,38 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Learn about Floorball, its history, and rules.">
-    <meta name="keywords" content="Floorball, history, rules">
-    <meta name="author" content="Mikael Korhonen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Floorball</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav aria-label="Main navigation">
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" aria-current="page">About Floorball</a></li>
+                <li class="active"><a href="about.html">About Floorball</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>About Floorball</h1>
         <section>
+            <h1>About Floorball</h1>
             <h2>What is Floorball?</h2>
             <p>Floorball is a simple indoor sport where five players per team use sticks to hit a light plastic ball into a goal. It’s fast, fun, and perfect for newbies. Floorball is a fast-paced indoor team sport that blends <b>speed</b>, <b>skill</b>, and <b>strategy</b>. It originated in Sweden in the late 1960s and is now played in over 70 countries.</p>
         </section>
         <section>
             <h2>Background</h2>
             <p>The game features five field players and a goalkeeper per team on a 40 x 20 meter court, surrounded by a 50 cm high rink made of plastic mats. Players use sticks (half their body length) made of glass or carbon fiber, with blades curved up to 30 mm. The ball weighs 23 grams, has a 72 mm diameter with 26 holes, and is played into 115 x 160 cm goals. Two referees manage the game.</p>
+        </section>
+        <section>
             <h3>Floorball Equipment</h3>
+            <div class="table-responsive">
             <table>
-                <caption>Floorball Equipment Details</caption>
                 <tr>
-                    <th scope="col">Item</th>
-                    <th scope="col">Description</th>
+                    <th>Item</th>
+                    <th>Description</th>
                 </tr>
                 <tr>
                     <td>Stick</td>
@@ -52,10 +51,11 @@
                     <td>Mandatory in Finland for players born after 1998 when playing official matches. Not mandatory in other countries.</td>
                 </tr>
             </table>
+            </div>
         </section>
         <section>
             <h2>Rules</h2>
-            <p>The match lasts 3 x 20-minute periods (or 3 x 15/2 x 15 for juniors), with time stopping during breaks. Key rules include:</p>
+            <p>The match lasts 3 x 20-minute periods (or 3 x 15 for juniors), with time stopping during breaks. Key rules include:</p>
             <ul>
                 <li>No tackling, but shoulder-to-shoulder contact is allowed.</li>
                 <li>Sticks are for playing the ball only; misuse results in fouls.</li>
@@ -63,13 +63,15 @@
                 <li>Substitutions can happen on the fly or during stoppages, like ice hockey.</li>
                 <li>No offside rule applies.</li>
             </ul>
+        </section>
+        <section>
             <h3>How Floorball differs from Ice Hockey</h3>
+            <div class="table-responsive">
             <table>
-                <caption>Comparison of Floorball and Ice Hockey Rules</caption>
                 <tr>
-                    <th scope="col">Rule</th>
-                    <th scope="col">Floorball</th>
-                    <th scope="col">Ice Hockey</th>
+                    <th>Rule</th>
+                    <th>Floorball</th>
+                    <th>Ice Hockey</th>
                 </tr>
                 <tr>
                     <td>Offside</td>
@@ -92,6 +94,7 @@
                     <td>Puck & use of skates</td>
                 </tr>
             </table>
+            </div>
         </section>
         <section>
             <h3>How to Start Playing</h3>
@@ -103,9 +106,12 @@
         </section>
     </main>
     <footer>
-        <nav aria-label="Footer navigation">
-            <p>Mikael Korhonen | <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a></p>
-        </nav>
+        <p>
+            Mikael Korhonen | 
+            <a href="index.html">Home</a> | 
+            <a href="about.html" class="active">About Floorball</a> | 
+            <a href="contact.html">Contact</a>
+        </p>
     </footer>
 </body>
 </html>
